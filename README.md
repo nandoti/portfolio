@@ -1,4 +1,4 @@
 # portfolio
 Portfolio do Desenvolvedor
 
-Criando um tamplete.
+Criando um tamplete e controle das tarefas via GitHub.
