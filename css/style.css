@@ -1,6 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 /*  Icons para serem usados no CSS  */
 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/*Para aplicar em todos os elementos, se usa o "*" */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Para referenciar uma classe no CSS, se usa ponto no início */
+
+/*Header*/
+.header {
+  width: 100%;
+  /*vs significa a altura da visualização da imagem*/
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*Rgb com transparência*/
+  background-color: rgba(0, 0, 0, 10);
+}
+
+/*Usando desta forma, você altera apenas a imagem que desejar*/
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*Sombra branca*/
+  opacity: 0.5;
+  animation: zoom 25s;
+}
+
+/*Animação do Site*/
+
+@keyframes zoom {
+  /*Início da animação*/
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.banner h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font: "Josefin Sans" serif;
+  font-weight: 200;
+  text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
+  ine-height: 3.5rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: developerBanner 1s 0.5s forwards;
+}
+
+.banner p {
+  font-family: "Roboto Slab";
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: developerBanner 1s 0.7s forwards;
+}
+
+.banner button {
+  font-family: "Roboto Slab";
+  color: #ffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+  background: linear-gradient(to right, #ef473a, #cb2d3e);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  animation: developerBanner 1s 0.9s forwards;
+}
+
+/*Classe para definir uma ação ou evento na página*/
+
+.banner button:hover {
+  opacity: 0.8;
+}
+
+/*Animação do Banner */
+@keyframes developerBanner {
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0rem) rotateY(0);
+    opacity: 1;
+  }
+}
