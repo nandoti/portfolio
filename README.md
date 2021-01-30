@@ -8,7 +8,7 @@ Criando um tamplete e controle das tarefas via GitHub.
 
 ### Ícones
 
-:package: Nova funcionalidade
-:up: Atualização
-:beatle: Correção de bug
-:checkered_flap: Release
+:package: nova funcionalidade
+:up:  atualização
+:beatle: correção de bug
+:checkered_flap:  release
