@@ -6,9 +6,9 @@ Portfolio do Desenvolvedor
 
 Criando um tamplete e controle das tarefas via GitHub.
 
-### Ícones
+## Ícones
 
-:package: nova funcionalidade
-:up:  atualização
-:beatle: correção de bug
-:checkered_flap:  release
+- :package: nova funcionalidade
+- :up: atualização
+- :beatle: correção de bug
+- :checkered_flap: release
