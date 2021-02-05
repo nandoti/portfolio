@@ -4,7 +4,7 @@ Portfolio do Desenvolvedor
 
 ## Tarefas
 
-Criando um tamplete e controle das tarefas via GitHub.
+Criando um template e controle das tarefas via GitHub.
 
 ## Ícones
 
