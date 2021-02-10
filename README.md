@@ -11,4 +11,4 @@ Criando um template e controle das tarefas via GitHub.
 - :package: nova funcionalidade
 - :up: atualização
 - :beetle: correção de bug
-- :checkered flag: release
+- :checkered_flag: release
